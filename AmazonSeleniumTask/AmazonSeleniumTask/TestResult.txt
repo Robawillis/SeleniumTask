@@ -1,0 +1,43 @@
+=> AmazonSeleniumTask.OrderBookFromAmazonFeature._01NavigateToAmazon
+Given I enter "http://www.amazon.co.uk" in Chrome's address bar
+-> done: OrderBookFromAmazonStepsScenario1.GivenIEnterInChromeSAddressBar("http://www.amazon...") (2.7s)
+When I instruct it to go to the address
+-> done: OrderBookFromAmazonStepsScenario1.WhenIInstructItToGoToTheAddress() (0.0s)
+Then I expect Amazon's home page to display
+-> done: OrderBookFromAmazonStepsScenario1.ThenIExpectAmazonSHomePageToDisplay() (2.1s)
+=> AmazonSeleniumTask.OrderBookFromAmazonFeature._02SearchForBook
+Given I enter "Game of Thrones" in Amazon's Search bar
+-> done: OrderBookFromAmazonStepsScenario2.GivenIEnterInAmazonSSearchBar("Game of Thrones") (0.2s)
+And I select the "books" option in the Amazon Search bar category
+-> done: OrderBookFromAmazonStepsScenario2.GivenISelectTheOptionInTheAmazonSearchBarCatoegory("books") (0.3s)
+When I click on the search button
+-> done: OrderBookFromAmazonStepsScenario2.WhenIClickOnTheSearchButton() (2.2s)
+Then I expect to see Amazon's search results page with relevant search results
+-> done: OrderBookFromAmazonStepsScenario2.ThenIExpectToSeeAmazonSSearchResultsPageWithRelevantSearchResults() (0.8s)
+=> AmazonSeleniumTask.OrderBookFromAmazonFeature._03BookDetails
+Given I Have the amazon results page
+-> done: OrderBookFromAmazonStepsScenario3.GivenIHaveTheAmazonResultsPage() (0.0s)
+And the book on test is present in the results list
+-> done: OrderBookFromAmazonStepsScenario3.GivenTheBookOnTestIsPresentInTheResultsList() (0.1s)
+When I click on the item in the results list
+-> done: OrderBookFromAmazonStepsScenario3.WhenIClickOnTheItemInTheResultsList() (3.4s)
+Then I expect to See the books details
+-> done: OrderBookFromAmazonStepsScenario3.ThenIExpectToSeeTheBooksDetails() (0.8s)
+=> AmazonSeleniumTask.OrderBookFromAmazonFeature._04AddingBookToBasket
+Given the books details are correct
+-> done: OrderBookFromAmazonStepsScenario4.GivenTheBooksDetailsAreCorrect() (0.2s)
+And I have the paperback option selected
+-> done: OrderBookFromAmazonStepsScenario4.GivenIHaveThePaperbackOptionSelected() (0.0s)
+When I click on the "Add to basket" option
+-> done: OrderBookFromAmazonStepsScenario4.WhenIClickOnTheOption("Add to basket") (1.1s)
+Then I expect to see the "Added to basket" notification page
+-> done: OrderBookFromAmazonStepsScenario4.ThenIExpectToSeeTheNotificationPage("Added to basket") (0.8s)
+=> AmazonSeleniumTask.OrderBookFromAmazonFeature._05BasketVerification
+Given I am on the basket notification page
+-> done: OrderBookFromAmazonStepsScenario5.GivenIAmOnTheBasketNotificationPage() (0.2s)
+When I click on the "Edit basket" button
+-> done: OrderBookFromAmazonStepsScenario5.WhenIClickOnTheButton("Edit basket") (1.2s)
+Then I expect to see the Shopping basket page with the item present, quantity and subtotal correct
+-> done: OrderBookFromAmazonStepsScenario5.ThenIExpectToSeeTheShoppingBasketPageWithTheItemPresentQuantityAndSubtotalCorrect() (1.1s)
+=> AmazonSeleniumTask.OrderBookFromAmazonFeature
+-> Using app.config

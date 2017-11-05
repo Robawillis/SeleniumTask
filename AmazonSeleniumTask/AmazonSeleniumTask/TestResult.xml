@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Release\AmazonSeleniumTask.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-11-05" time="12:54:10">
+  <environment nunit-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.15063.0" platform="Win32NT" cwd="C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask" machine-name="ROB-PC" user="Rob" user-domain="ROB-PC" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Release\AmazonSeleniumTask.dll" executed="True" result="Success" success="True" time="24.453" asserts="16">
+    <properties>
+      <property name="_PID" value="10956" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <results>
+      <test-suite type="TestSuite" name="AmazonSeleniumTask" executed="True" result="Success" success="True" time="24.434" asserts="16">
+        <results>
+          <test-suite type="TestFixture" name="OrderBookFromAmazonFeature" description="OrderBookFromAmazon" executed="True" result="Success" success="True" time="24.427" asserts="16">
+            <properties>
+              <property name="Description" value="OrderBookFromAmazon" />
+            </properties>
+            <results>
+              <test-case name="AmazonSeleniumTask.OrderBookFromAmazonFeature._01NavigateToAmazon" description="01 Navigate to Amazon" executed="True" result="Success" success="True" time="4.900" asserts="1">
+                <categories>
+                  <category name="Amazon_HomePage" />
+                </categories>
+                <properties>
+                  <property name="Description" value="01 Navigate to Amazon" />
+                </properties>
+              </test-case>
+              <test-case name="AmazonSeleniumTask.OrderBookFromAmazonFeature._02SearchForBook" description="02 Search for Book" executed="True" result="Success" success="True" time="3.555" asserts="1">
+                <categories>
+                  <category name="Book_Search" />
+                </categories>
+                <properties>
+                  <property name="Description" value="02 Search for Book" />
+                </properties>
+              </test-case>
+              <test-case name="AmazonSeleniumTask.OrderBookFromAmazonFeature._03BookDetails" description="03 Book details" executed="True" result="Success" success="True" time="4.397" asserts="4">
+                <categories>
+                  <category name="Book_Details" />
+                </categories>
+                <properties>
+                  <property name="Description" value="03 Book details" />
+                </properties>
+              </test-case>
+              <test-case name="AmazonSeleniumTask.OrderBookFromAmazonFeature._04AddingBookToBasket" description="04 Adding book to basket" executed="True" result="Success" success="True" time="2.131" asserts="3">
+                <categories>
+                  <category name="Adding" />
+                  <category name="book" />
+                  <category name="to" />
+                  <category name="basket" />
+                </categories>
+                <properties>
+                  <property name="Description" value="04 Adding book to basket" />
+                </properties>
+              </test-case>
+              <test-case name="AmazonSeleniumTask.OrderBookFromAmazonFeature._05BasketVerification" description="05 Basket verification" executed="True" result="Success" success="True" time="2.563" asserts="7">
+                <categories>
+                  <category name="Editing" />
+                  <category name="Basket" />
+                </categories>
+                <properties>
+                  <property name="Description" value="05 Basket verification" />
+                </properties>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

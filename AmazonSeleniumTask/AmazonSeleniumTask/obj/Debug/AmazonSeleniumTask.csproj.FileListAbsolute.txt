@@ -1,0 +1,14 @@
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\obj\Debug\AmazonSeleniumTask.csprojResolveAssemblyReference.cache
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\AmazonSeleniumTask.dll.config
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\AmazonSeleniumTask.dll
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\AmazonSeleniumTask.pdb
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\nunit.framework.dll
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\WebDriver.dll
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\nunit.framework.xml
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\bin\Debug\WebDriver.xml
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\obj\Debug\AmazonSeleniumTask.dll
+C:\Users\Rob\Documents\JobApps\Selenium Task\AmazonSeleniumTask\AmazonSeleniumTask\obj\Debug\AmazonSeleniumTask.pdb

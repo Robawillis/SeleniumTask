@@ -1,0 +1,48 @@
+pipeline {
+    agent testClient
+
+    stages {
+        stage('Preparation') {
+            steps {
+              gitSCM =  git credentialsId: '0defd2b2-4220-457c-bd1b-fd116e28ba38', poll: false, url: 'git@192.168.14.133:QA-Tests/QA-Automation.git'
+            }
+        }
+        stage('Build') {
+            steps {
+            bat 'nuget restore AmazonSeleniumTask\AmazonSeleniumTask.sln'
+            bat "\"${tool 'MSBuild Dot Net 4.5'}\" AmazonSeleniumTask.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.0"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                  dir('AmazonSeleniumTask'){
+                 bat 'nunit3-console.exe /labels=All /out=TestResult.txt /result=TestResult.xml;format=nunit2 \\bin\\Release\\EvolutionAutomation.dll'
+
+                 bat 'specflow.exe nunitexecutionreport AmazonSeleniumTask \\AmazonSeleniumTask.csproj /out:MyResult.html'
+                 }
+            }
+        }
+         stage('Publish'){
+         publishHTML (target: [
+       allowMissing: false,
+       alwaysLinkToLastBuild: false,
+       keepAll: true,
+       reportDir: '',
+       reportFiles: 'MyResult.html',
+       reportName: "AmazonSeleniumTask Test Execution Report "
+       ])
+       archiveArtifacts 'screenshots\\*.jpg'
+         }
+        
+    }
+}
+
+
+
+
+
+   stage('Jira'){
+       node('master'){
+             step([$class: 'hudson.plugins.jira.JiraIssueUpdater', issueSelector: [$class: 'hudson.plugins.jira.selector.DefaultIssueSelector'], scm: [$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'git@192.168.14.133:QA-Tests/QA-Automation.git']]]])
+           }
+   }
